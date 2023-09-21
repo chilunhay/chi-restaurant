@@ -31,7 +31,7 @@ const Featured = async () => {
               <div className="relative flex-1 w-full hover:rotate-[60deg] transition-all duration-500">
                 <Image
                   src={item.img}
-                  alt="img"
+                  alt="product img"
                   fill
                   className="object-contain"
                   sizes="100%"

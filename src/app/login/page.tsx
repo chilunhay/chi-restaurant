@@ -26,7 +26,7 @@ const LoginPage = () => {
         <div className="relative h-1/3 w-full md:h-full md:w-1/2">
           <Image
             src="/loginBg.png"
-            alt=""
+            alt="login background"
             fill
             className="object-cover"
             sizes="100%"
