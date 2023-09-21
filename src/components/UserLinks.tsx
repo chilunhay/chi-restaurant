@@ -17,7 +17,7 @@ const UserLinks = () => {
             className="ml-2 cursor-pointer"
             onClick={() => {
               signOut({ redirect: false }).then(() => {
-                router.push("/"); // Redirect to the dashboard page after signing out
+                router.push("/"); // Redirect to the home page after signing out
               });
             }}
           >
