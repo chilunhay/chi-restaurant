@@ -20,16 +20,19 @@ const CartPage = () => {
       router.push("/");
     } else {
       try {
-        const res = await fetch("http://localhost:3000/api/orders", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            price: totalPrice,
-            products,
-            status: "Not Paid!",
-            userEmail: session.user.email,
-          }),
-        });
+        const res = await fetch(
+          "https://chi-restaurant.vercel.app/api/orders",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              price: totalPrice,
+              products,
+              status: "Not Paid!",
+              userEmail: session.user.email,
+            }),
+          }
+        );
 
         const data = await res.json();
         router.push(`/pay/${data.id}`);

@@ -4,13 +4,13 @@ import React from "react";
 
 const getData = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/products", {
+    const res = await fetch("https://chi-restaurant.vercel.app/api/products", {
       cache: "no-store",
     });
 
     return res.json();
   } catch (err) {
-    // console.log(err)
+    console.log(err);
   }
 };
 

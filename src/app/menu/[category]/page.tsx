@@ -6,7 +6,7 @@ import React from "react";
 const getData = async (category: string) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/products?cat=${category}`,
+      `https://chi-restaurant.vercel.app/api/products?cat=${category}`,
       {
         cache: "no-store",
       }
@@ -14,7 +14,7 @@ const getData = async (category: string) => {
 
     return res.json();
   } catch (err) {
-    // console.log(err)
+    console.log(err);
   }
 };
 

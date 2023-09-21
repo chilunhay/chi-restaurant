@@ -18,7 +18,7 @@ const PayPage = ({ params }: { params: { id: string } }) => {
     const makeRequest = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/api/create-intent/${id}`,
+          `https://chi-restaurant.vercel.app/api/create-intent/${id}`,
           {
             method: "POST",
           }

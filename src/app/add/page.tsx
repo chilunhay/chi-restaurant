@@ -93,14 +93,17 @@ const AddPage = () => {
 
     try {
       const url = await upload();
-      const res = await fetch("http://localhost:3000/api/products", {
-        method: "POST",
-        body: JSON.stringify({
-          img: url,
-          ...inputs,
-          options,
-        }),
-      });
+      const res = await fetch(
+        "https://chi-restaurant.vercel.app/api/products",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            img: url,
+            ...inputs,
+            options,
+          }),
+        }
+      );
 
       const data = await res.json();
 
