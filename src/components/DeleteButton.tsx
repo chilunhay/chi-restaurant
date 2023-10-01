@@ -19,19 +19,21 @@ const DeleteButton = ({ id }: { id: string }) => {
   }
 
   const handleDelete = async () => {
-    const res = await fetch(
-      `https://chi-restaurant.vercel.app/api/products/${id}`,
-      {
-        method: "DELETE",
-      }
-    );
+    if (confirm("Are you sure you want to delete this product ?")) {
+      const res = await fetch(
+        `https://chi-restaurant.vercel.app/api/products/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
-    if (res.status === 200) {
-      router.push("/menu");
-      toast.success("The product has been deleted!");
-    } else {
-      const data = await res.json();
-      toast.error(data.message);
+      if (res.status === 200) {
+        router.push("/menu");
+        toast.success("The product has been deleted!");
+      } else {
+        const data = await res.json();
+        toast.error(data.message);
+      }
     }
   };
 
