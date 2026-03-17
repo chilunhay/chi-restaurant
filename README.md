@@ -29,7 +29,7 @@ Type Safety: End-to-end TypeScript implementation to minimize runtime errors.
 🔧 Getting Started
 1. Clone the repository
 bash
-git clone [https://github.com/chilunhay/chi-restaurant](https://github.com/chilunhay/chi-restaurant)
+git clone [https://github.com/chilunhay/chi-restaurant.git](https://github.com/chilunhay/chi-restaurant.git)
 cd chi-restaurant
 Hãy thận trọng khi sử dụng mã.
 
