@@ -27,40 +27,38 @@ State Management: Managed using React Hooks and Context API for a smooth user ex
 Type Safety: End-to-end TypeScript implementation to minimize runtime errors.
 
 🔧 Getting Started
-1. Clone the repository
-bash
-git clone [https://github.com/chilunhay/chi-restaurant.git](https://github.com/chilunhay/chi-restaurant.git)
-cd chi-restaurant
-Hãy thận trọng khi sử dụng mã.
+1. Clone the repository:
 
-2. Install dependencies
-bash
+git clone [https://github.com/chilunhay/chi-restaurant.git](https://github.com/chilunhay/chi-restaurant.git)
+
+  cd chi-restaurant
+
+2. Install dependencies:
+
 npm install
-Hãy thận trọng khi sử dụng mã.
 
 3. Setup Environment Variables
-Create a .env file in the root directory and add:
-env
+Create a .env file in the root directory and add: env
+
 DATABASE_URL=your_postgresql_url
 NEXTAUTH_SECRET=your_secret
 GOOGLE_ID=your_google_id
 GOOGLE_CLIENT_SECRET=your_google_secret
 STRIPE_SECRET_KEY=your_stripe_key
 STRIPE_WEBHOOK_SECRET=your_webhook_secret
-Hãy thận trọng khi sử dụng mã.
 
-4. Run Migrations
-bash
+4. Run Migrations:
+
 npx prisma generate
 npx prisma db push
-Hãy thận trọng khi sử dụng mã.
 
-5. Start the Development Server
-bash
+5. Start the Development Server:
+
 npm run dev
-Hãy thận trọng khi sử dụng mã.
 
 👤 Author
 Tat Duc Chi
+
 GitHub: @chilunhay
-Portfolio: 3d-portfolio-nine-eta.vercel.app
+
+Portfolio: [3d-portfolio-nine-eta.vercel.app](https://3d-portfolio-nine-eta.vercel.app/)
